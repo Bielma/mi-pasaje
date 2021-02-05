@@ -1,132 +1,146 @@
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    body {
-        font-family: Nutmeg-UltraBlack;
-    }
-    
-    .container {
-        min-height: 625px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    
-    .container .info {
-        background-color: #00953a;
-        grid-column: span 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        gap: 15px;
-    }
-    
-    .info__header h1 {
-        justify-self: center;
-        color: #ffd923;
-        font-size: 2.7vw;
-        font-weight: 800;
-    }
-    
-    .info__header h3 {
-        color: #ffffff;
-    }
-    
-    .info__baneficios {
-        background-color: #fed925;
-        color: #5b6670;
-        font-size: 1.8vw;
-        font-family: Nutmeg-ExtraBold;
-        display: inline-block;
-        align-items: center;
-        justify-content: center;
-        margin-left: 40px;
-    }
-    
-    .info__baneficios h1 {}
-    
-    .info__camion {
-        justify-self: center;
-        align-self: center;
-    }
-    
-    .info__footer {
-        width: 50%;
-        align-self: flex-end;
-        margin-right: 50px;
-    }
-    /*Derecha
+@font-face {
+    font-family: "Montserrat";
+    src: url("https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@import url(//db.onlinewebfonts.com/c/81b89a47048c559f50027876075960d8?family=NutmegHeadline-UltraBlackItalic);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {}
+
+.container {
+    min-height: 625px;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container .info {
+    background-color: #00953a;
+    width: 50%;
+    font-family: Nutmeg-UltraBlack;
+}
+
+.info-card {
+    margin-left: 15%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.info__header h1 {
+    justify-self: center;
+    color: #ffd923;
+    font-weight: 800;
+    font-size: 1.8vw;
+    font-weight: 800;
+}
+
+.info__header h3 {
+    color: #ffffff;
+}
+
+.info__baneficios {
+    background-color: #fed925;
+    color: #5b6670;
+    font-size: 1.8vw;
+    font-family: Nutmeg-ExtraBold;
+    padding: 2% 18% 2% 6%;
+    margin-right: -10%;
+    margin-top: 10%;
+}
+
+.info__camion {
+    margin-top: 13%;
+    margin-left: 10%;
+}
+
+.info__camion img {
+    width: 22vw;
+}
+
+.info__footer {
+    width: 40%;
+    align-self: flex-end;
+    margin-right: 50px;
+}
+
+
+/*Derecha
     .
     ------------------------- */
-    
-    .container .form {
-        grid-column: span 1;
-        display: flex;
-        flex-direction: column;
+
+.container .form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__header {
+    align-self: center;
+    display: flex;
+    width: auto;
+    height: 100px;
+    padding: 20px;
+    border: 1px, solid #000000;
+}
+
+.form__header-logo {
+    margin-top: 50px;
+    width: 15vw;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.form__header-logo img {
+    width: 15vw;
+    justify-self: center;
+    align-self: center;
+}
+
+.form__header-link a {
+    text-decoration: none;
+    color: #00953b;
+    border-bottom: 10px solid #00953b;
+}
+
+.form__card {
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, .25);
+    border-radius: 10px 10px 0 0;
+    padding: 12% 12% 5%;
+    margin: 0 auto;
+}
+
+.form__login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-family: Montserrat;
+}
+
+.form__login-bottom {
+    margin: 0;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    font-family: Nutmeg-Bold;
+    width: 100%;
+    background-color: #f8f8f8;
+}
+
+@media (max-width: 600px) {
+    .info {
+        display: none;
     }
-    
-    .form__header {
-        align-self: center;
-        display: flex;
-        width: auto;
-        height: 100px;
-        padding: 20px;
-        border: 1px, solid #000000;
-    }
-    
-    .form__header-logo {
-        margin-top: 50px;
-        width: 15vw;
-        display: flex;
-        align-self: center;
-        justify-content: center;
-    }
-    
-    .form__header-logo img {
-        width: 15vw;
-        justify-self: center;
-        align-self: center;
-    }
-    
-    .form__header-link a {
-        text-decoration: none;
-        color: #00953b;
-        border-bottom: 10px solid #00953b;
-    }
-    
-    .form__card {
-        box-shadow: 0 0 20px 5px rgba(0, 0, 0, .25);
-        border-radius: 10px 10px 0 0;
-        padding: 12% 12% 5%;
-        margin: 0 auto;
-    }
-    
-    .form__login {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        font-family: Montserrat;
-    }
-    
-    .form__login-bottom {
-        margin: 0;
-        height: 80px;
-        display: flex;
-        flex-direction: column;
-        font-family: Nutmeg-Bold;
+    .form {
         width: 100%;
-        background-color: #f8f8f8;
     }
-    
-    @media (max-width: 600px) {
-        .form {
-            grid-column: 1/-1;
-        }
-        .info {
-            grid-row: 2;
-        }
-    }
+}
