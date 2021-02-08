@@ -7,9 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/styles/style.css">
-    <link href="//db.onlinewebfonts.com/c/81b89a47048c559f50027876075960d8?family=NutmegHeadline-UltraBlackItalic" rel="stylesheet" type="text/css" />
-    <link href="" rel="stylesheet" type="text/css" />
-    <link href="" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&family=Potta+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -50,21 +49,26 @@
             </header>
             <div class="form__card">
                 <form class="form__login">
-                    <h3>Iniciar sesión</h3>
+                    <h3 class="form__login-title">Iniciar sesión</h3>
+
                     <label for="email">Correo Electrónico*</label>
                     <input name="email " type="text" />
-                    <label for=" pass ">Contraseña*</label>
-                    <input name="pass " type="password " />
-                    <input type="submit" value="Ingresar" />
-                    <a href="#">Recuperar contraseña</a>
-                </form>
-                <div class="form__login-bottom">
-                    <span>¿No tienes cuenta?</span>
-                    <a href="#">
-                        <button class="btn-registrate">Registrate ahora</button>
-                    </a>
-                </div>
 
+                    <label for=" pass ">Contraseña*</label>
+                    <input name="pass " type="password" />
+
+                    <button class="submit-button" type="submit">
+                        Ingresar                        
+                    </button>
+                    <a class="link-pass" href="#">Recuperar contraseña</a>
+                </form>
+
+            </div>
+            <div class="form__card-bottom">
+                <span class="form__card-bottom__title">¿No tienes cuenta?</span>
+                <a class="form__card-bottom__btn-register" href="#">
+                    <button type="button">Registrate ahora</button>
+                </a>
             </div>
 
 

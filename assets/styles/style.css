@@ -1,4 +1,9 @@
 @font-face {
+    font-family: "Nutmeg-UltraBlack";
+    src: url("/assets/fonts/Nutmeg-UltraBlack.ttf"), url("/Nutmeg-UltraBlack.woff2");
+}
+
+@font-face {
     font-family: "Montserrat";
     src: url("https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2") format("woff2");
     font-style: normal;
@@ -6,14 +11,19 @@
     unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-@import url(//db.onlinewebfonts.com/c/81b89a47048c559f50027876075960d8?family=NutmegHeadline-UltraBlackItalic);
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap');
+:root {
+    --primary-color: #00953a;
+    --secundary-color: #ffd923;
+    --header-size: 4rem;
+    --font: 1.8rem;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-body {}
 
 .container {
     min-height: 625px;
@@ -22,9 +32,8 @@ body {}
 }
 
 .container .info {
-    background-color: #00953a;
+    background-color: var(--primary-color);
     width: 50%;
-    font-family: Nutmeg-UltraBlack;
 }
 
 .info-card {
@@ -36,21 +45,23 @@ body {}
 
 .info__header h1 {
     justify-self: center;
-    color: #ffd923;
+    color: var(--secundary-color);
     font-weight: 800;
     font-size: 1.8vw;
     font-weight: 800;
+    font-family: 'Potta One', cursive;
 }
 
 .info__header h3 {
     color: #ffffff;
+    font-family: "Nutmeg-UltraBlack", 'Nutmeg-UltraBlack', sans-serif;
 }
 
 .info__baneficios {
-    background-color: #fed925;
+    background-color: var(--secundary-color);
     color: #5b6670;
     font-size: 1.8vw;
-    font-family: Nutmeg-ExtraBold;
+    font-family: "Nutmeg-ExtraBold";
     padding: 2% 18% 2% 6%;
     margin-right: -10%;
     margin-top: 10%;
@@ -81,6 +92,8 @@ body {}
     width: 50%;
     display: flex;
     flex-direction: column;
+    gap: 25px;
+    justify-content: center;
 }
 
 .form__header {
@@ -103,21 +116,21 @@ body {}
 }
 
 .form__header-link {
-    grid-column: span 1;
-    align-self: flex-start;
-    justify-self: center;
+    position: fixed;
+    top: 5vh;
+    right: 5vw;
 }
 
 .form__header-link a {
     text-decoration: none;
-    color: #00953b;
-    border-bottom: 7px solid #00953b;
+    color: var(--primary-color);
+    border-bottom: 5px solid var(--primary-color);
 }
 
 .form__card {
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, .25);
     border-radius: 10px 10px 0 0;
-    padding: 12% 12% 5%;
+    padding: 7% 8% 3%;
     margin: 0 auto;
 }
 
@@ -126,17 +139,101 @@ body {}
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    font-family: Montserrat;
+    font-family: "Montserrat";
+    gap: 15px;
 }
 
-.form__login-bottom {
-    margin: 0;
-    height: 80px;
+.form__login-title {
+    margin-top: 0;
+    text-align: center;
+    color: #5b6670;
+    font-family: "Nutmeg-ExtraBold";
+    font-size: 22px;
+}
+
+.form__login label {
+    color: #7c858c;
+    font-family: 'Montserrat';
+}
+
+.form__login input {
+    color: #6c757d;
+    height: calc(1.5em + .5rem + 2px);
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+}
+
+.form__login input:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25);
+}
+
+.link-pass {
+    justify-self: center;
+    color: var(--primary-color);
+    font-size: 12px;
+    margin: 0 auto;
+}
+
+.submit-button {
+    color: white;
+    background-color: var(--primary-color);
+    border-radius: .7rem;
+    display: inline-block;
+    width: 70%;
+    height: 36px;
+    margin: 0 auto;
+}
+
+.submit-button:hover {
+    cursor: pointer;
+}
+
+.form__card-bottom {
+    font-family: "Nutmeg-Bold";
+    background-color: #f8f8f8;
+    box-shadow: 0 15px 20px 5px rgba(0, 0, 0, .25);
+    border-radius: 0 0 10px 10px;
+    padding: 4% 12.5% 2%;
+    margin: 0px auto;
+    margin-top: -4%;
     display: flex;
     flex-direction: column;
-    font-family: Nutmeg-Bold;
-    width: 100%;
-    background-color: #f8f8f8;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.form__card-bottom__title {
+    color: #5b6670;
+    font-size: 16px;
+}
+
+.form__card-bottom__btn-register {
+    text-decoration: none;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.form__card-bottom__btn-register button {
+    padding: 0;
+    background-color: #e2f0e3;
+    color: #00953b;
+    border-style: none;
+    margin: 0 auto;
+    height: 40px;
+    font-size: 1rem;
+    border-radius: 10px;
+    padding: .4rem;
+}
+
+.form__card-bottom__btn-register button:hover {
+    background-color: var(--primary-color);
+    cursor: pointer;
+    color: white;
 }
 
 @media (max-width: 600px) {
@@ -145,5 +242,13 @@ body {}
     }
     .form {
         width: 100%;
+    }
+    .form__header-link {
+        display: none;
+    }
+    .form__card {
+        justify-self: center;
+        align-self: center;
+        padding: 7% 10% 9%;
     }
 }
