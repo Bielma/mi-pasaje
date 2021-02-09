@@ -134,6 +134,8 @@
     margin: 0 auto;
 }
 
+.recovery {}
+
 .form__login {
     display: flex;
     flex-direction: column;

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/register.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&family=Potta+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="info">
+            <div class="info-card">
+
+                <header class="info__header">
+                    <h1>Mi Transporte utiliza </h1>
+                    <h1>el pago electrónicio,</h1>
+                    <h3>con múltiples beneficios para ti</h3>
+                </header>
+
+                <div class="info__baneficios">
+                    <span>Registrate para obtenerlos</span>
+                </div>
+
+                <figure class="info__camion">
+                    <img src="./assets/img/camion.svg" alt="imagen de un camion" />
+
+                </figure>
+
+                <footer class="info__footer">
+                    <img src="./assets/img/logo-transportejalisco.svg" alt="logo Transporte Jalisco" />
+                </footer>
+
+            </div>
+
+        </div>
+        <div class="form">
+            <header class="form__header">
+                <div class="form__header-logo">
+                    <img class="logo" src="./assets/img/logo-mipasaje.svg" />
+                </div>
+                <div class="form__header-link">
+                    <a class="link" href="" onclick="goToLogin()">Iniciar sesion</a>
+                </div>
+            </header>
+            <div class="form__card register">
+                <form class="form__login">
+
+
+                    <label for="name">Nombres(s)*</label>
+                    <input name="name " type="text" onchange="validar()" />
+                    <div id="invalid-field">
+                        Este campo es requerido
+                    </div>
+
+                    <label for="apellido">Primer apellido *</label>
+                    <input name="apellido" type="text" />
+                    <div id="invalid-field">
+                        Este campo es requerido
+                    </div>
+
+                    <label for="segApellido">Segundo apellido *</label>
+                    <input name="segApellido" type="text" />
+                    <div id="invalid-field">
+                        Este campo es requerido
+                    </div>
+
+                    <label for="email">Correo Electrónico *</label>
+                    <input name="email " type="text" />
+                    <div id="invalid-field">
+                        Correo electronico invalido. Ejemplo: ejemplo@email.com
+                    </div>
+
+                    <label for="phone">Celular *</label>
+                    <input name="phone" type="text" />
+                    <div id="invalid-field">
+                        Numero de celular invalido. Ejemplo: 3333333333
+                    </div>
+
+                    <label for="pass">Contraseña*</label>
+                    <input name="pass" type="password" />
+                    <div id="invalid-field">
+                        La contraseña debe tener al menos 8 caracteres
+                    </div>
+                    <label for="repPass">Confirmar Contraseña*</label>
+                    <input name="repPpass" type="password" />
+                    <div id="invalid-field">
+                        Este campo es requerido
+                    </div>
+
+                    <div class="form__login-checkbox">
+                        <input class="cbx" type="checkbox" name="leido" />
+                        <span class="link-aviso">                             
+                            He leído el <a href="https://transparencia.info.jalisco.gob.mx/sites/default/files/Aviso%20de%20Privacidad%20SETRANS_0.pdf">aviso de privacidad</a>
+                        </span>
+                    </div>
+
+                    <button class="submit-button" type="submit">
+                        Registrarme
+                    </button>
+
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
