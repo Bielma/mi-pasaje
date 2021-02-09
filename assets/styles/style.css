@@ -28,7 +28,6 @@
 .container {
     min-height: 625px;
     display: flex;
-    grid-template-columns: 1fr 1fr;
 }
 
 .container .info {
@@ -134,8 +133,6 @@
     margin: 0 auto;
 }
 
-.recovery {}
-
 .form__login {
     display: flex;
     flex-direction: column;
@@ -239,6 +236,9 @@
 }
 
 @media (max-width: 600px) {
+    .container {
+        justify-content: center;
+    }
     .info {
         display: none;
     }
