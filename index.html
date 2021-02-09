@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inicio</title>
     <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&family=Potta+One&display=swap" rel="stylesheet">
@@ -44,7 +44,7 @@
                     <img class="logo" src="./assets/img/logo-mipasaje.svg" />
                 </div>
                 <div class="form__header-link">
-                    <a class="link" href="#">Inicio</a>
+                    <a class="link" href="#" onclick="gotoLogin()">Inicio</a>
                 </div>
             </header>
             <div class="form__card">
@@ -60,13 +60,13 @@
                     <button class="submit-button" type="submit">
                         Ingresar                        
                     </button>
-                    <a class="link-pass" href="#">Recuperar contraseña</a>
+                    <a class="link-pass" href="#" onclick="gotoRecoverPass()">Recuperar contraseña</a>
                 </form>
 
             </div>
             <div class="form__card-bottom">
                 <span class="form__card-bottom__title">¿No tienes cuenta?</span>
-                <a class="form__card-bottom__btn-register" href="#">
+                <a class="form__card-bottom__btn-register" onclick="goToRegister()">
                     <button type="button">Registrate ahora</button>
                 </a>
             </div>
@@ -76,7 +76,7 @@
 
     </div>
 
-
+    <script src="scripts/main.js"></script>
 
 </body>
 
