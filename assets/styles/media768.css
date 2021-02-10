@@ -1,6 +1,7 @@
 @media (max-width: 768px) {
     .container {
         justify-content: center;
+        grid-template-columns: 1fr;
     }
     .info {
         display: none;
@@ -28,7 +29,7 @@
         box-shadow: none;
     }
     .form__login {
-        margin: 0;
+        margin: 30px;
     }
     .info__footer-form {
         width: 100%;
