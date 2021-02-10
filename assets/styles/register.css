@@ -1,6 +1,10 @@
 .register {
-    padding: 5% 6% 3%;
     gap: 5px;
+    padding: 7% 6% 3%;
+}
+
+.form__login {
+    margin: 0;
 }
 
 .form__login-checkbox {
@@ -39,4 +43,18 @@
     font-size: 80%;
     color: #dc3545;
     display: none;
+}
+
+@media (max-width: 1000px) {
+    .form__header-link {
+        position: fixed;
+        top: 5vh;
+        right: 5vw;
+    }
+    .form__header-link a {
+        font-size: 10px;
+        text-decoration: none;
+        color: var(--primary-color);
+        border-bottom: 5px solid var(--primary-color);
+    }
 }
