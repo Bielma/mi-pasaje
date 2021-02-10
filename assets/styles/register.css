@@ -45,6 +45,10 @@
     display: none;
 }
 
+.container .info {
+    height: 150vh;
+}
+
 @media (max-width: 1000px) {
     .form__header-link {
         position: fixed;

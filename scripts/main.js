@@ -13,9 +13,3 @@ function goToRegister() {
 function goToRecoverPass() {
     history.pushState("", "Recuperar contraseña", "recover-pass.html");
 }
-
-
-function validar(event) {
-    console.log()
-}
-document.addEventListener()
